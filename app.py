@@ -11,7 +11,7 @@ uploaded_file = st.sidebar.file_uploader("Trading Chart upload karein", type=['p
 
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-pro')
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
